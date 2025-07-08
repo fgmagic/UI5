@@ -24,3 +24,4 @@ server:
       mountPath: /northwind
       configuration:
         baseUri: https://services.odata.org/v2/northwind/northwind.svc/
+        allowMethods: [GET, POST, HEAD, PUT, DELETE, PATCH, OPTIONS]
