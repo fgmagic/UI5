@@ -3,8 +3,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 
 	return Controller.extend("your.namespace.controller.Main", {
 		onProductsPress: function () {
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("View1");
+			const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("Products");
+		},
+		onCustomersPress: function () {
+			const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("Customers");
 		},
 	});
 });

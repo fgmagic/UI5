@@ -84,9 +84,14 @@
           "target": "main"
         },
         {
-          "name": "View1",
-          "pattern": "View1",
-          "target": "View1"
+          "name": "Products",
+          "pattern": "Products",
+          "target": "Products"
+        },
+        {
+          "name": "Customers",
+          "pattern": "Customers",
+          "target": "Customers"
         }
       ],
       "targets": {
@@ -94,9 +99,14 @@
           "viewId": "main",
           "viewName": "Main"
         },
-        "View1": {
-          "viewName": "View1",
-          "viewId": "View1",
+        "Products": {
+          "viewName": "Products",
+          "viewId": "Products",
+          "viewLevel": 1
+        },
+        "Customers": {
+          "viewName": "Customers",
+          "viewId": "Customers",
           "viewLevel": 1
         }
       }

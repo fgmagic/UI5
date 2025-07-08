@@ -11,6 +11,9 @@
             <Button
                 text="Products"
                 press="onProductsPress"/>
+			<Button
+                text="Customers"
+                press="onCustomersPress"/>
         </content>
     </Page>
 

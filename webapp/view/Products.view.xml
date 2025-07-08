@@ -1,0 +1,27 @@
+<mvc:View
+	controllerName="com.myorg.myapp.controller.Products"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'com/myorg/myapp/model/formatter'
+	}">
+
+	<Page
+		title="{i18n>appTitle}"
+		id="page">
+		<content>
+			<List
+				items="{/Products}">
+				<items>
+					<StandardListItem
+						title="{ProductName}"
+						description="{ProductID}"
+						info="{UnitPrice} {QuantityPerUnit}"/>
+				</items>
+    		</List>
+		</content>
+	</Page>
+
+</mvc:View>
