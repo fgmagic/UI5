@@ -82,12 +82,22 @@
           "pattern": "",
           "name": "main",
           "target": "main"
+        },
+        {
+          "name": "View1",
+          "pattern": "View1",
+          "target": "View1"
         }
       ],
       "targets": {
         "main": {
           "viewId": "main",
           "viewName": "Main"
+        },
+        "View1": {
+          "viewName": "View1",
+          "viewId": "View1",
+          "viewLevel": 1
         }
       }
     }

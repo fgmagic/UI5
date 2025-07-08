@@ -2,10 +2,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
 
 	return Controller.extend("your.namespace.controller.Main", {
-		onInit: function () {
-			var oModel = new sap.ui.model.odata.v2.ODataModel("/northwind/");
-			console.log(oModel);
-			this.getView().setModel(oModel);
+		onProductsPress: function () {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("View1");
 		},
 	});
 });
