@@ -1,9 +1,12 @@
-sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController, MessageBox) {
+sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
 
-	return BaseController.extend("com.myorg.myapp.controller.Main", {
-		sayHello: function () {
-			MessageBox.show("Hello World!");
-		}
+	return Controller.extend("your.namespace.controller.Main", {
+		onInit: function () {
+			var oModel = new sap.ui.model.odata.v2.ODataModel(
+				"/northwind/"
+			);
+			this.getView().setModel(oModel);
+		},
 	});
 });

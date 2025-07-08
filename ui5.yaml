@@ -19,3 +19,8 @@ server:
       afterMiddleware: compression
     - name: ui5-middleware-livereload
       afterMiddleware: compression
+    - name: ui5-middleware-simpleproxy
+      afterMiddleware: compression
+      mountPath: /northwind
+      configuration:
+        baseUri: https://services.odata.org/v2/northwind/northwind.svc/
