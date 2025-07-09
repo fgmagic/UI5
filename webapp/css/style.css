@@ -1,0 +1,10 @@
+.sapMSLITitle {
+	font-weight: bold;
+}
+
+:root {
+	--sapButton_Background: #4f329c;
+	--sapButton_TextColor: white;
+	--sapList_HeaderBackground: #f5f5f5;
+	--sapBaseColor: #ffffff;
+}

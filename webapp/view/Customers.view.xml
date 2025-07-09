@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="com.myorg.myapp.controller.Products"
+	controllerName="com.myorg.myapp.controller.Customers"
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
@@ -12,15 +12,9 @@
 		title="{i18n>appTitle}"
 		id="page">
 		<content>
-			<List
-				items="{/Customers}">
-				<items>
-					<StandardListItem
-						title="{CustomerID}"
-						description="{CompanyName}"
-						info="{ContactName} {ContactTitle}"/>
-				</items>
-    		</List>
+			<List id="customersList">
+				<!-- No items binding here, no template here -->
+			</List>
 		</content>
 	</Page>
 

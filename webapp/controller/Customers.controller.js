@@ -1,18 +1,30 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
-	"use strict";
+sap.ui.define(
+	["sap/ui/core/mvc/Controller", "sap/m/StandardListItem"],
+	function (Controller, StandardListItem) {
+		"use strict";
 
-	return Controller.extend("com.myorg.myapp.controller.Customers", {
-		onInit: function () {
-			var oModel = new sap.ui.model.odata.v2.ODataModel("/northwind/");
-			oModel.read("/Customers", {
-				success: function (oData) {
-					console.log("Products loaded:", oData);
-				},
-				error: function (oError) {
-					console.error("Failed to load products:", oError);
-				},
-			});
-			this.getView().setModel(oModel);
-		},
-	});
-});
+		return Controller.extend("com.myorg.myapp.controller.Customers", {
+			onInit: function () {
+				const oList = this.byId("customersList");
+
+				const oTemplate = new StandardListItem({
+					title: {
+						path: "CustomerID",
+						formatter: this.formatCustomerID.bind(this),
+					},
+					description: "{CompanyName}",
+					info: "{ContactName} ({ContactTitle})",
+				});
+
+				oList.bindItems({
+					path: "/Customers",
+					template: oTemplate,
+				});
+			},
+
+			formatCustomerID: function (sCustomerID) {
+				return sCustomerID; // Just return the ID, styling will be done via CSS
+			},
+		});
+	}
+);
