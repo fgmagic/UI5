@@ -10,19 +10,37 @@
         id="page">
         <content>
 
-		
-	<GenericTile header="Products" press="onProductsPress"
-    frameType="OneByHalf" subheader="List of products"
-    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
-    </GenericTile>
-    <GenericTile header="Customers" press="onCustomersPress"
-    frameType="OneByHalf" subheader="List of customers"
-    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
-    </GenericTile>
-    <GenericTile header="Products Table" press="onProductsTablePress"
-    frameType="OneByHalf" subheader="Table of products"
-    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
-    </GenericTile>
+<Panel headerText="Options" class="sapUiResponsiveMargin">
+    <content>
+        <FlexBox wrap="Wrap" class="sapUiMediumMargin">
+            <GenericTile header="Products" press="onProductsPress"
+                frameType="OneByHalf" subheader="List of products"
+                class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+            </GenericTile>
+            <GenericTile header="Customers" press="onCustomersPress"
+                frameType="OneByHalf" subheader="List of customers"
+                class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+            </GenericTile>
+            <GenericTile header="Products Table" press="onProductsTablePress"
+                frameType="OneByHalf" subheader="Table of products"
+                class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+            </GenericTile>
+        </FlexBox>
+    </content>
+</Panel>
+
+            <!-- Uncomment the buttons below if you want to use them instead of GenericTiles -->
+            <!--
+            <Button
+                text="Products"
+                press="onProductsPress"/>
+            <Button
+                text="Customers"
+                press="onCustomersPress"/>
+            <Button
+                text="Products Table"
+                press="onProductsTablePress"/>      
+            -->
 
 
          <!--    <Button
