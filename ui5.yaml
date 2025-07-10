@@ -13,13 +13,6 @@ resources:
   configuration:
     paths:
       webapp: "webapp"
-    excludes:
-      - "server.js"
-      - "node_modules/**"
-      - "package*.json"
-      - "*.md"
-      - ".git/**"
-      - "dist/**"
 builder:
   resources:
     excludes:
