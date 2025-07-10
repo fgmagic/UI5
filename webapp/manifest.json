@@ -51,7 +51,8 @@
       "minUI5Version": "1.136.2",
       "libs": {
         "sap.ui.core": {},
-        "sap.m": {}
+        "sap.m": {},
+        "sap.ui.layout": {}
       }
     },
 
@@ -114,6 +115,11 @@
           "name": "Customers",
           "pattern": "Customers",
           "target": "Customers"
+        },
+        {
+          "name": "ProductsTable",
+          "pattern": "ProductsTable",
+          "target": "ProductsTable"
         }
       ],
       "targets": {
@@ -129,6 +135,11 @@
         "Customers": {
           "viewName": "Customers",
           "viewId": "Customers",
+          "viewLevel": 1
+        },
+        "ProductsTable": {
+          "viewName": "ProductsTable",
+          "viewId": "ProductsTable",
           "viewLevel": 1
         }
       }

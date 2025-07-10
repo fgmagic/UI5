@@ -10,5 +10,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 			const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("Customers");
 		},
+		onProductsTablePress: function () {
+			const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("ProductsTable");
+		},
 	});
 });

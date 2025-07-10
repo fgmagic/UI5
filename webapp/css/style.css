@@ -8,3 +8,7 @@
 	--sapList_HeaderBackground: #f5f5f5;
 	--sapBaseColor: #ffffff;
 }
+
+.sapMTable {
+	height: 400px;
+}
