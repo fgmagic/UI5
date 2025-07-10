@@ -2,13 +2,30 @@
     controllerName="com.myorg.myapp.controller.Main"
     displayBlock="true"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:form="sap.ui.layout.form">
 
     <Page
         title="{i18n>appTitle}"
         id="page">
         <content>
-            <Button
+
+		
+	<GenericTile header="Products" press="onProductsPress"
+    frameType="OneByHalf" subheader="List of products"
+    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
+    </GenericTile>
+    <GenericTile header="Customers" press="onCustomersPress"
+    frameType="OneByHalf" subheader="List of customers"
+    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
+    </GenericTile>
+    <GenericTile header="Products Table" press="onProductsTablePress"
+    frameType="OneByHalf" subheader="Table of products"
+    class="sapUiSmallMarginEnd sapUiMediumMarginBottom">
+    </GenericTile>
+
+
+         <!--    <Button
                 text="Products"
                 press="onProductsPress"/>
 			<Button
@@ -16,7 +33,7 @@
                 press="onCustomersPress"/>
             <Button
                 text="Products Table"
-                press="onProductsTablePress"/>         
+                press="onProductsTablePress"/>      -->    
         </content>
     </Page>
 
